@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
 
 const TITLE = "CodersGPT";
 const DESCRIPTION = "chatbot for coders";
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
