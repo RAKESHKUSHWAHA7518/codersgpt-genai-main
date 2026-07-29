@@ -55,7 +55,7 @@ export const auth = betterAuth({
           products: [
             {
               productId:
-                "d4692ac4-fd8f-4ab7-a73a-66a1403f9627", // ID of Product from Polar Dashboard
+                "cbad3e25-0624-42c4-b391-cc473eb73f7f", // ID of Product from Polar Dashboard
               slug: "Pro", // Custom slug for easy reference in Checkout URL, e.g. /checkout/pro
             },
           ],

@@ -32,17 +32,13 @@ import {
 import { Skeleton } from "../ui/skeleton";
 import { Spinner } from "../ui/spinner";
 import Link from "next/link";
+import { authClient } from "@/lib/auth-client";
 
 export function SidebarFooterComponent() {
   const { isMobile } = useSidebar();
 
-  const isPending = false;
-
-  const user = {
-    name: "codersgyan",
-    email: "codersgyan@gmail.com",
-    image: "/logo.png",
-  };
+  const { data: session, isPending } = authClient.useSession();
+  const user = session?.user;
 
   return (
     <SidebarMenu>

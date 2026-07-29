@@ -42,6 +42,14 @@ const models = [
   {
     chef: "Google",
     chefSlug: "google",
+    id: "gemini-2.5-flash",
+    name: "Gemini 2.5 Flash",
+    providers: ["google", "google-vertex"],
+    isProOnly: false,
+  },
+  {
+    chef: "Google",
+    chefSlug: "google",
     id: "gemini-3.1-pro-preview",
     name: "Gemini 3.1 Pro",
     providers: ["google", "google-vertex"],
