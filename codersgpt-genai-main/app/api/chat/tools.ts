@@ -85,7 +85,7 @@ export const productTool = tool(
   {
     name: "display_products",
     description:
-      "Search for real e-commerce products and display a carousel of prices and details. Always call this tool whenever user searches for any kind of product.",
+      "Search for real physical e-commerce products and display a carousel of prices and details. Use this tool ONLY for physical goods (e.g., electronics, clothing, physical books). Do NOT use this tool for digital items, courses, software, or services. Call this tool when the user is looking to buy a physical product.",
     schema: z.object({
       query: z
         .string()
