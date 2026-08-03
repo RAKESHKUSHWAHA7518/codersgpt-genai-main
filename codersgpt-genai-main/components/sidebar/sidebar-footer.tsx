@@ -129,7 +129,10 @@ export function SidebarFooterComponent() {
                 </DropdownMenuItem>
               </DropdownMenuGroup>
               <DropdownMenuSeparator />
-              <DropdownMenuItem onClick={() => {}}>
+              <DropdownMenuItem onClick={async () => {
+                await authClient.signOut();
+                window.location.href = "/auth/signin";
+              }}>
                 <LogOut />
                 Log out
               </DropdownMenuItem>

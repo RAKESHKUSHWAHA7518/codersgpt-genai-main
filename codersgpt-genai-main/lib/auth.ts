@@ -8,6 +8,7 @@ import {
   checkout,
   portal,
   usage,
+  webhooks,
 } from "@polar-sh/better-auth";
 import { Polar } from "@polar-sh/sdk";
 
@@ -64,6 +65,9 @@ export const auth = betterAuth({
         }),
         portal(),
         usage(),
+        webhooks({
+          secret: process.env.POLAR_WEBHOOK_SECRET as string,
+        }),
       ],
     }),
   ],
